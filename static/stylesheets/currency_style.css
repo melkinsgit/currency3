@@ -2,7 +2,7 @@ body {
 	background-color: palegreen;
 }
 
-div {
+div, span {
 	padding: 15px;
 }
 

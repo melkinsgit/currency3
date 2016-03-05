@@ -5,10 +5,17 @@ block content
 
 	form(action='/convert', method='get')
 		div(class="currency_form")
-			span.label Amount in Dollars
-			input(type='text', name='dollarAmount')
+			span.label Amount to Convert
+			input(type='text', name='convertAmount')
+			span.label Convert From
+			select(name='fromCurrency')
+				option(value='Dollars') Dollars
+				option(value='Euros') Euros
+				option(value='Pounds') Pounds
+			span.label Convert To
 			select(name='toCurrency')
-				option(value='Euro') Euros
-				option(value='Pound') Pounds
+				option(value='Dollars') Dollars
+				option(value='Euros') Euros
+				option(value='Pounds') Pounds
 		div(class=button)
 			input(type='submit', value='Convert')
